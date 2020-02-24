@@ -20,7 +20,7 @@ public class App {
 		SpringApplication.run(App.class, args);
 	}
 
-
+/*
 	@RestController
 	@RequestMapping("/rooms")
 	public class RoomController{
@@ -35,14 +35,15 @@ public class App {
 
 	@RestController
 	@RequestMapping("/guests")
-	public class GuestController{
+	public class GuestController {
 		@Autowired
 		private GuestRepository guestRepository;
 
 		@GetMapping
-		public Iterable<Guest> getGuests(){
+		public Iterable<Guest> getGuests() {
 			return this.guestRepository.findAll();
 		}
+	}
 
 		@RestController
 		@RequestMapping("/reservations")
@@ -55,6 +56,5 @@ public class App {
 				return this.reservationRepository.findAll();
 			}
 		}
-	}
-
+	*/
 }
